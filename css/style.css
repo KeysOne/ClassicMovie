@@ -16,19 +16,6 @@ body {
 }
 
 /*-- banner --*/
-.banner {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("../images/1.jpg");
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    zoom: 1;
-}
-
 .banner-dot /*图片阴影*/
 {
     background: url(../images/dott.png) repeat 0px 0px;
@@ -114,6 +101,10 @@ body {
     border: 1px solid #d2cfcf;
     margin-top: 20px;
 
+}
+
+#to250 {
+    text-decoration: none;
 }
 
 /*-- //header-top --*/
@@ -454,6 +445,10 @@ body {
     outline: none;
 }
 
+#td {
+    text-decoration: none;
+    margin-top: 100px;
+}
 /*-- //services --*/
 /*-- gallery --*/
 /*-- jzBox-lightbox --*/

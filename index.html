@@ -65,30 +65,34 @@
             })
 
             /*返回顶端*/
-            $(document).ready(function () {
-                $().UItoTop({easingType: 'easeOutQuart'});
 
-            });
-            /*slideToggle弹出隐藏‘塞尔达、荒野之息、古墓丽影*/
-            $("#tc").click(function () {
-                $("#services").slideToggle("slow");
-            });
-
-            $("#flip").click(function () {
-                $("#panel").slideToggle("slow");
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 700) {
+                    $("#toTop").fadeIn(200);
+                } else {
+                    $("#toTop").fadeOut(200);
+                }
             });
 
-            $("#maliao").click(function () {
-                $("#mlaguanwang").slideToggle("slow");
-            });
-            /* 空洞骑士弹出信息*/
-            $("#kd").click(function () {
-                $("#kdm").slideToggle("slow");
+            /*slideToggle弹出隐藏*/
+            $("#xskd").click(function () {
+                $("#js").slideToggle("slow");
             });
 
-            /*刺客信条弹出*/
-            $("#ck").click(function () {
-                $("#ckm").slideToggle("slow");
+            $("#xj").click(function () {
+                $("#cy").slideToggle("slow");
+            });
+
+            $("#zgss").click(function () {
+                $("#btl").slideToggle("slow");
+            });
+
+            $("#rz").click(function () {
+                $("#df").slideToggle("slow");
+            });
+
+            $("#qy").click(function () {
+                $("#qx").slideToggle("slow");
             });
         })
 
@@ -116,7 +120,8 @@
                 <div class="header-right">
                     <div class="search">
                         <form action="#" method="post">
-                            <img src="images/search.png">
+                            <a href="https://movie.douban.com/top250" id="to250" style="color: #ffffff">
+                                <img src="images/search.png">查看豆瓣top250</a>
                         </form>
                     </div>
 
@@ -156,12 +161,11 @@
                     <!--navbar-header-->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li id="one"><a class="active" href="#">塞尔达传说:荒野之息</a></li>
-                            <li id="two"><a href="#">古墓丽影:崛起</a></li>
-                            <li id="three"><a class="scroll" href="#">超级马里奥:奥德赛</a></li>
-                            <li id="four"><a class="scroll" href="#">空洞骑士</a></li>
-                            <li id="five"><a class="scroll" href="#">刺客信条:大革命</a></li>
-
+                            <li id="one"><a class="scroll" href="#">肖申克的救赎</a></li>
+                            <li id="two"><a class="scroll" href="#">星际穿越</a></li>
+                            <li id="three"><a class="scroll" href="#">这个杀手不太冷</a></li>
+                            <li id="four"><a class="scroll" href="#">让子弹飞</a></li>
+                            <li id="five"><a class="scroll" href="#">千与千寻</a></li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
@@ -174,11 +178,11 @@
             <div class="container">
                 <div class="w3layouts-text">
                     <label></label><label></label><label></label><label></label><label></label><label></label><label></label>
-                    <h2 class="item" style="display: block;"><a class="scroll" href="#hyzx">塞尔达传说:荒野之息</a></h2>
-                    <h2 class="item"><a class="scroll" href="#gmly">古墓丽影:崛起</a></h2>
-                    <h2 class="item"><a class="scroll" href="#cjmla">超级马里奥:奥德赛</a></h2>
-                    <h2 class="item"><a class="scroll" href="#kdqs">空洞骑士</a></h2>
-                    <h2 class="item"><a class="scroll" href="#ckxt">刺客信条:大革命</a></h2>
+                    <h2 class="item" style="display: block;"><a class="scroll" href="#xskdjs">肖申克的救赎</a></h2>
+                    <h2 class="item"><a class="scroll" href="#xjcy">星际穿越</a></h2>
+                    <h2 class="item"><a class="scroll" href="#xs">这个杀手不太冷</a></h2>
+                    <h2 class="item"><a class="scroll" href="#rzdf">让子弹飞</a></h2>
+                    <h2 class="item"><a class="scroll" href="#qyqx">千与千寻</a></h2>
                     <label></label><label></label><label></label><label></label><label></label><label></label><label></label>
                 </div>
 
@@ -190,31 +194,30 @@
 
 <!-- //banner -->
 
-<!-- 塞尔达传说:荒野之息 -->
-<div class="welcome" id="hyzx">
+<!-- 肖申克的救赎 -->
+<div class="welcome" id="xskdjs">
     <div class="container">
         <div class="col-md-6 agileits_welcome_grid_left">
-            <h3>塞尔达传说:荒野之息</h3>
+            <h3>肖申克的救赎</h3>
             <p style="font-size: 1.2em;text-indent: 2em;">是由任天堂企划制作本部与子公司Monolith
                 Soft协力研发制作的一款开放世界动作冒险游戏，游戏故事发生在海拉鲁王国灭亡的100年后，曾经一场大灾难袭击了海拉鲁王国使之灭亡，主角林克在地下遗迹苏醒，追寻着不可思议的声音，开始了新的冒险之旅
-                <i id="tc" style="font-weight: bold;margin-left: -2em;cursor: pointer; color:dodgerblue;">查看详情</i>
+                <i id="xskd" style="font-weight: bold;margin-left: -2em;cursor: pointer; color:dodgerblue;">查看详情</i>
             </p>
         </div>
         <div class="col-md-6 agileits_welcome_grid_right">
             <img alt=" " class="img-1" src="images/1_1.jpg"/>
-            <a href="one.html"><i id="td"
-                                  style="font-weight: bold;margin-right: 10em;cursor: pointer; color:sandybrown;">了解更多</i></a>
-
+            <a href="one.html" id="td"
+               style="font-weight: bold;margin-right: 10em;cursor: pointer; color:sandybrown;">了解更多</a>
         </div>
         <div class="clearfix"></div>
     </div>
 </div>
 
 
-<!-- //塞尔达传说:荒野之息-->
+<!-- //肖申克的救赎-->
 
-<!--古墓丽影九宫格开始-->
-<div id="services" style="margin-left:15%; width:80%; display: none;">
+<!--九宫格开始-->
+<div id="js" style="margin-left:15%; width:80%; display: none;">
     <div>
         <img src="images/l1.jpg" style="width: 30%;">
         <img src="images/l2.jpg" style="width: 30%;">
@@ -231,14 +234,14 @@
         <img src="images/l9.jpg" style="width: 30%;"></div>
 
 </div>
-<!--古墓丽影九宫格结束-->
+<!--九宫格结束-->
 
 
-<!-- 古墓丽影:崛起 -->
-<div class="welcome" id="gmly">
+<!-- 星际穿越 -->
+<div class="welcome" id="xj">
     <div class="container">
         <div class="col-md-6 agileits_welcome_grid_left">
-            <h3>古墓丽影:崛起</h3>
+            <h3>星际穿越</h3>
             <p style="font-size: 1.2em;text-indent: 2em;">女主角劳拉·克劳馥(Lara Croft)去探索她以前不相信的超自然现象和未知的世界，寻找永生的秘密。
                 从日本龙三角的邪马台逃生后，劳拉却仍未从那次冒险的阴影里解脱出来，为了证明她在那里看到的一切并非虚无，
                 劳拉决定跟随父亲的研究，在叙利亚寻找先知雅各的墓穴，之后前往西伯利亚，搜寻那里的神秘古城：Kitezh。
@@ -250,11 +253,11 @@
         <div class="clearfix"></div>
     </div>
 </div>
-<!-- //古墓丽影:崛起 -->
+<!-- //星际穿越 -->
 
 
-<!--古墓丽影九宫格开始-->
-<div id="panel" style="margin-left:15%; width:80%; display: none;">
+<!--九宫格开始-->
+<div id="cy" style="margin-left:15%; width:80%; display: none;">
     <div>
         <img src="images/l1.jpg" style="width: 30%;">
         <img src="images/l2.jpg" style="width: 30%;">
@@ -271,14 +274,13 @@
         <img src="images/l9.jpg" style="width: 30%;"></div>
 
 </div>
-<!--古墓丽影九宫格结束-->
+<!--九宫格结束-->
 
-<!-- 超级马里奥:奥德赛 -->
-<div class="welcome" id="cjmla">
+<!-- 这个杀手不太冷 -->
+<div class="welcome" id="zgss">
     <div class="container">
-
         <div class="col-md-6 agileits_welcome_grid_left">
-            <h3><a href="https://www.nintendo.com.hk/switch/super_mario_odyssey/" target="_blank"></a>超级马里奥:奥德赛</a></h3>
+            <h3><a href="https://www.nintendo.com.hk/switch/super_mario_odyssey/" target="_blank"></a>这个杀手不太冷</a></h3>
             <p style="font-size: 1.2em;text-indent: 2em;">
                 任天堂在E3大会上公布了新作《超级马里奥：奥德赛》（以下简称《奥德赛》）的游戏片段。这款经典游戏首次采用了开放式地图，在游戏中，马里奥不但可以在玩家的操作下自由行走，还能化身小鱼、炮弹等新的角色。
                 《奥德赛》中，马里奥的帽子被赋予了新的功能——可以用它收集硬币，跑出去攻击敌人，或者当你把帽子扔在面前的时候，它就会变成一个穿越到新的区域的平台。视频显示马里奥的帽子可以戴到游戏中的任何一个物件上，之后马里奥就可以附身到任何东西上。也就是说你可以用游戏里的任意东西来攻关
@@ -290,43 +292,40 @@
         <div class="col-md-6 agileits_welcome_grid_right">
             <img alt=" " class="img-responsive" src="images/3_1.jpg" style="margin-top: 15%;"/>
         </div>
-
-
         <div class="clearfix"></div>
-
-        <!--古墓丽影九宫格开始-->
-        <div id="mlaguanwang" style="margin-left:15%; width:80%; display: none;">
-            <div>
-                <img src="images/l1.jpg" style="width: 30%;">
-                <img src="images/l2.jpg" style="width: 30%;">
-                <img src="images/l3.jpg" style="width: 30%;"></div>
-
-            <div style="margin-top:5px;">
-                <img src="images/l4.jpg" style="width: 30%;">
-                <img src="images/l5.jpg" style="width: 30%;">
-                <img src="images/l6.jpg" style="width: 30%;"></div>
-
-            <div style="margin-top:5px;">
-                <img src="images/l7.jpg" style="width: 30%;">
-                <img src="images/l8.jpg" style="width: 30%;">
-                <img src="images/l9.jpg" style="width: 30%;"></div>
-
-        </div>
-        <!--古墓丽影九宫格结束-->
-
     </div>
+</div>
+<!-- 这个杀手不太冷 -->
+
+<!--九宫格开始-->
+<div id="btl" style="margin-left:15%; width:80%; display: none;">
+    <div>
+        <img src="images/l1.jpg" style="width: 30%;">
+        <img src="images/l2.jpg" style="width: 30%;">
+        <img src="images/l3.jpg" style="width: 30%;"></div>
+
+    <div style="margin-top:5px;">
+        <img src="images/l4.jpg" style="width: 30%;">
+        <img src="images/l5.jpg" style="width: 30%;">
+        <img src="images/l6.jpg" style="width: 30%;"></div>
+
+    <div style="margin-top:5px;">
+        <img src="images/l7.jpg" style="width: 30%;">
+        <img src="images/l8.jpg" style="width: 30%;">
+        <img src="images/l9.jpg" style="width: 30%;"></div>
 
 </div>
-<!-- 超级马里奥:奥德赛 -->
+<!--九宫格结束-->
 
-<!-- 空洞骑士 -->
-<div class="welcome" id="kdqs">
+
+<!-- 让子弹飞 -->
+<div class="welcome" id="rzdf">
     <div class="container">
         <div class="col-md-6 agileits_welcome_grid_left">
-            <h3>空洞骑士</h3>
+            <h3>让子弹飞</h3>
             <p style="font-size: 1.2em;text-indent: 2em;">
                 一款动画风格的银河恶魔城类型动作游戏，庞大的游戏世界交错相通。游戏的世界因为生动、丰富的细节而生机勃勃：地下洞穴中充满了奇异又可怕的生物，每一种都是通过传统的 2D 手绘动画打造。
-                <i id="kd" style="font-weight: bold;margin-left: -2em;cursor: pointer; color: red;">查看详情</i></p>
+                <i id="rz" style="font-weight: bold;margin-left: -2em;cursor: pointer; color: red;">查看详情</i></p>
         </div>
         <div class="col-md-6 agileits_welcome_grid_right">
             <img alt=" " class="img-responsive" src="images/4_1.jpg"/>
@@ -334,10 +333,10 @@
         <div class="clearfix"></div>
     </div>
 </div>
-<!-- //空洞骑士 -->
+<!-- //让子弹飞 -->
 
-<!--古墓丽影九宫格开始-->
-<div id="kdm" style="margin-left:15%; width:80%; display: none;">
+<!--九宫格开始-->
+<div id="df" style="margin-left:15%; width:80%; display: none;">
     <div>
         <img src="images/l1.jpg" style="width: 30%;">
         <img src="images/l2.jpg" style="width: 30%;">
@@ -354,10 +353,10 @@
         <img src="images/l9.jpg" style="width: 30%;"></div>
 
 </div>
-<!--古墓丽影九宫格结束-->
+<!--九宫格结束-->
 
-<!-- 刺客信条:大革命 -->
-<div class="welcome" id="ckxt">
+<!-- 千与千寻 -->
+<div class="welcome" id="qyqx">
     <div class="container">
 
         <div class="col-md-6 agileits_welcome_grid_right">
@@ -365,18 +364,18 @@
         </div>
 
         <div class="col-md-6 agileits_welcome_grid_left">
-            <h3 style="float: right;">刺客信条:大革命</h3>
+            <h3 style="float: right;">千与千寻</h3>
             <p style="font-size: 1.2em; float: right;text-indent: 2em;">
                 育碧公司研发的一款动作冒险类游戏。游戏的背景设定在1789年的巴黎，法国大革命时期。经济的萧条使人民的生活苦不堪言，饥饿、贫穷、骚乱充斥着城市每一个角落，贵族们却还在逍遥自在的生活。玩家将扮演全新刺客主角亚诺·多里安，拥有法兰西与奥地利血统的他在失去一切后，于1789年加入了刺客组织，试图找出这场革命幕后的真正势力。
-                <i id="ck" style="font-weight: bold;margin-left: -2em;cursor: pointer; color: red;">查看详情</i></p>
+                <i id="qy" style="font-weight: bold;margin-left: -2em;cursor: pointer; color: red;">查看详情</i></p>
         </div>
         <div class="clearfix"></div>
     </div>
 </div>
-<!-- //刺客信条:大革命 -->
+<!-- //千与千寻 -->
 
-<!--古墓丽影九宫格开始-->
-<div id="ckm" style="margin-left:15%; width:80%; display: none;">
+<!--九宫格开始-->
+<div id="qx" style="margin-left:15%; width:80%; display: none;">
     <div>
         <img src="images/l1.jpg" style="width: 30%;">
         <img src="images/l2.jpg" style="width: 30%;">
@@ -393,7 +392,7 @@
         <img src="images/l9.jpg" style="width: 30%;"></div>
 
 </div>
-<!--古墓丽影九宫格结束-->
+<!--九宫格结束-->
 
 
 <!-- footer -->
