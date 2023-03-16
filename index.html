@@ -18,8 +18,6 @@
     <!-- css样式 -->
     <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/>
     <!--// css样式 -->
-    <!-- icon字体 -->
-    <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //icon字体 -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -104,9 +102,23 @@
 <div class="banner" id="bg">
     <div class="banner-dot">
         <!--header-->
-        <div class="header-top">
+        <div class="header">
             <div class="container">
                 <nav class="navbar navbar-default">
+
+                    <!--页面缩至最小响应式内容-->
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse"
+                                type="button">
+                            <span class="sr-only" style="cursor: pointer;"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!--//页面缩至最小响应式内容-->
 
                     <div class="header-left">
                         <h1><a href="index.html">Classic<span>movies </span></a></h1>
@@ -138,7 +150,7 @@
                     <label></label><label></label><label></label><label></label><label></label><label></label><label></label>
                     <h2 class="item" style="display: block;"><a class="scroll" href="#xskdjs">肖申克的救赎</a></h2>
                     <h2 class="item"><a class="scroll" href="#xjcy">星际穿越</a></h2>
-                    <h2 class="item"><a class="scroll" href="#xs">这个杀手不太冷</a></h2>
+                    <h2 class="item"><a class="scroll" href="#zgssbtl">这个杀手不太冷</a></h2>
                     <h2 class="item"><a class="scroll" href="#rzdf">让子弹飞</a></h2>
                     <h2 class="item"><a class="scroll" href="#qyqx">千与千寻</a></h2>
                     <label></label><label></label><label></label><label></label><label></label><label></label><label></label>
@@ -157,25 +169,25 @@
     <div class="container">
         <div class="col-md-6 agileits_welcome_grid_left">
             <h3>肖申克的救赎</h3>
-            <p style="font-size: 1.2em;text-indent: 2em;">是由任天堂企划制作本部与子公司Monolith
-                Soft协力研发制作的一款开放世界动作冒险游戏，游戏故事发生在海拉鲁王国灭亡的100年后，曾经一场大灾难袭击了海拉鲁王国使之灭亡，主角林克在地下遗迹苏醒，追寻着不可思议的声音，开始了新的冒险之旅
+            <p style="font-size: 1.2em;text-indent: 2em;">《肖申克的救赎》是由弗兰克·德拉邦特编剧并执导的美国剧情片,
+                由蒂姆·罗宾斯、摩根·弗里曼领衔主演。 该片根据斯蒂芬·埃德温·金1982年的中篇小说《肖申克的救赎》改编，
+                主要讲述了银行家安迪因被误判为枪杀妻子及其情人的罪名入狱后，他不动声色、 步步为营地谋划自我拯救并最终成功越狱，重获自由的故事。
                 <i id="xskd" style="font-weight: bold;margin-left: -2em;cursor: pointer; color:dodgerblue;">查看详情</i>
             </p>
         </div>
         <div class="col-md-6 agileits_welcome_grid_right">
             <img alt=" " class="img-1" src="images/1_1.jpg"/>
-            <a href="one.html" id="td"
-               style="font-weight: bolder;cursor: pointer; color:#ff994b;">了解更多</a>
+            <a href="one.html" id="t1">了解更多</a>
         </div>
         <div class="clearfix"></div>
     </div>
 </div>
 
-
 <!-- //肖申克的救赎-->
 
 <!--九宫格开始-->
 <div id="js" style="margin-left:15%; width:80%; display: none;">
+    <h3 style="color: darkorchid;font-size: 18px;font-weight: bolder;">精彩剧照</h3>
     <div>
         <img src="images/l1.jpg" style="width: 30%;">
         <img src="images/l2.jpg" style="width: 30%;">
@@ -196,17 +208,17 @@
 
 
 <!-- 星际穿越 -->
-<div class="welcome" id="xj">
+<div class="welcome" id="xjcy">
     <div class="container">
         <div class="col-md-6 agileits_welcome_grid_left">
             <h3>星际穿越</h3>
-            <p style="font-size: 1.2em;text-indent: 2em;">女主角劳拉·克劳馥(Lara Croft)去探索她以前不相信的超自然现象和未知的世界，寻找永生的秘密。
-                从日本龙三角的邪马台逃生后，劳拉却仍未从那次冒险的阴影里解脱出来，为了证明她在那里看到的一切并非虚无，
-                劳拉决定跟随父亲的研究，在叙利亚寻找先知雅各的墓穴，之后前往西伯利亚，搜寻那里的神秘古城：Kitezh。
-                <i id="flip" style="font-weight: bold; color: red; cursor: pointer;margin-left: -2em;">查看详情</i></p>
+            <p style="font-size: 1.2em;text-indent: 2em;">《星际穿越》是2014年美英联合制作的科幻电影，由克里斯托弗·诺兰执导，马修·麦康纳、安妮·海瑟薇领衔主演。
+                该片在物理学家基普·索恩的黑洞理论之上进行改编，主要讲述了一组宇航员通过穿越虫洞来为人类寻找新家园的冒险故事。
+                <i id="xj" style="font-weight: bold; color: dodgerblue; cursor: pointer;margin-left: -2em;">查看详情</i></p>
         </div>
         <div class="col-md-6 agileits_welcome_grid_right">
             <img alt=" " class="img-2" src="images/2_1.jpg"/>
+            <a href="one.html" id="t2">了解更多</a>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -216,6 +228,7 @@
 
 <!--九宫格开始-->
 <div id="cy" style="margin-left:15%; width:80%; display: none;">
+    <h3 style="color: darkorchid;font-size: 18px;font-weight: bolder;">精彩剧照</h3>
     <div>
         <img src="images/l1.jpg" style="width: 30%;">
         <img src="images/l2.jpg" style="width: 30%;">
@@ -235,20 +248,22 @@
 <!--九宫格结束-->
 
 <!-- 这个杀手不太冷 -->
-<div class="welcome" id="zgss">
+<div class="welcome" id="zgssbtl">
     <div class="container">
         <div class="col-md-6 agileits_welcome_grid_left">
             <h3><a href="https://www.nintendo.com.hk/switch/super_mario_odyssey/" target="_blank"></a>这个杀手不太冷</a></h3>
             <p style="font-size: 1.2em;text-indent: 2em;">
-                任天堂在E3大会上公布了新作《超级马里奥：奥德赛》（以下简称《奥德赛》）的游戏片段。这款经典游戏首次采用了开放式地图，在游戏中，马里奥不但可以在玩家的操作下自由行走，还能化身小鱼、炮弹等新的角色。
-                《奥德赛》中，马里奥的帽子被赋予了新的功能——可以用它收集硬币，跑出去攻击敌人，或者当你把帽子扔在面前的时候，它就会变成一个穿越到新的区域的平台。视频显示马里奥的帽子可以戴到游戏中的任何一个物件上，之后马里奥就可以附身到任何东西上。也就是说你可以用游戏里的任意东西来攻关
-                <i id="maliao"
-                   style="font-weight: bold;margin-left: -2em; cursor: pointer; font-weight: bold; color: red">查看详情</i>
+                《这个杀手不太冷》（Léon）是由法国导演吕克·贝松编剧并执导的动作电影，
+                由娜塔莉·波特曼、让·雷诺、加里·奥德曼联袂出演。该片于1994年9月14日在法国上映。
+                讲述了一名职业杀手·莱昂无意间搭救了一名全家被杀害的叛逆女孩·玛蒂尔达，二人互生情愫的故事。
+                <i id="zgss"
+                   style="font-weight: bold;margin-left: -2em; cursor: pointer; font-weight: bold; color: dodgerblue">查看详情</i>
             </p>
         </div>
 
         <div class="col-md-6 agileits_welcome_grid_right">
-            <img alt=" " class="img-responsive" src="images/3_1.jpg" style="margin-top: 15%;"/>
+            <img alt=" " class="img-responsive" src="images/3_1.jpg"/>
+            <a href="one.html" id="t3">了解更多</a>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -257,6 +272,7 @@
 
 <!--九宫格开始-->
 <div id="btl" style="margin-left:15%; width:80%; display: none;">
+    <h3 style="color: darkorchid;font-size: 18px;font-weight: bolder;">精彩剧照</h3>
     <div>
         <img src="images/l1.jpg" style="width: 30%;">
         <img src="images/l2.jpg" style="width: 30%;">
@@ -282,11 +298,13 @@
         <div class="col-md-6 agileits_welcome_grid_left">
             <h3>让子弹飞</h3>
             <p style="font-size: 1.2em;text-indent: 2em;">
-                一款动画风格的银河恶魔城类型动作游戏，庞大的游戏世界交错相通。游戏的世界因为生动、丰富的细节而生机勃勃：地下洞穴中充满了奇异又可怕的生物，每一种都是通过传统的 2D 手绘动画打造。
-                <i id="rz" style="font-weight: bold;margin-left: -2em;cursor: pointer; color: red;">查看详情</i></p>
+                《让子弹飞》是由姜文执导，姜文、周润发、葛优、刘嘉玲、陈坤、周韵、廖凡、姜武等主演的剧情片，于2010年12月16日在中国内地上映。
+                该片根据马识途小说《夜谭十记》改编，讲述了悍匪张牧之摇身一变化名清官“马邦德”上任鹅城县长，并与镇守鹅城的恶霸黄四郎展开一场激烈争斗的故事。
+                <i id="rz" style="font-weight: bold;margin-left: -2em;cursor: pointer; color: dodgerblue;">查看详情</i></p>
         </div>
         <div class="col-md-6 agileits_welcome_grid_right">
             <img alt=" " class="img-responsive" src="images/4_1.jpg"/>
+            <a href="one.html" id="t4">了解更多</a>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -295,6 +313,7 @@
 
 <!--九宫格开始-->
 <div id="df" style="margin-left:15%; width:80%; display: none;">
+    <h3 style="color: darkorchid;font-size: 18px;font-weight: bolder;">精彩剧照</h3>
     <div>
         <img src="images/l1.jpg" style="width: 30%;">
         <img src="images/l2.jpg" style="width: 30%;">
@@ -315,17 +334,22 @@
 
 <!-- 千与千寻 -->
 <div class="welcome" id="qyqx">
+    <h3 style="color: darkorchid;font-size: 18px;font-weight: bolder;">精彩剧照</h3>
     <div class="container">
 
         <div class="col-md-6 agileits_welcome_grid_right">
             <img alt=" " class="img-responsive" src="images/5_1.jpg"/>
+            <a href="one.html" id="t5">了解更多</a>
         </div>
 
         <div class="col-md-6 agileits_welcome_grid_left">
             <h3 style="float: right;">千与千寻</h3>
             <p style="font-size: 1.2em; float: right;text-indent: 2em;">
-                育碧公司研发的一款动作冒险类游戏。游戏的背景设定在1789年的巴黎，法国大革命时期。经济的萧条使人民的生活苦不堪言，饥饿、贫穷、骚乱充斥着城市每一个角落，贵族们却还在逍遥自在的生活。玩家将扮演全新刺客主角亚诺·多里安，拥有法兰西与奥地利血统的他在失去一切后，于1789年加入了刺客组织，试图找出这场革命幕后的真正势力。
-                <i id="qy" style="font-weight: bold;margin-left: -2em;cursor: pointer; color: red;">查看详情</i></p>
+                《千与千寻》是由吉卜力工作室制作的动画电影，由宫崎骏执导，柊瑠美、入野自由、中村彰男、夏木真理等人担任主要配音。
+                该片主要讲述了千寻意外来到神灵世界后，为了救因惩罚而变成猪的家人，经历许多磨难的故事。
+                2001年7月20日在日本上映。2019年6月21日在中国大陆公映。2022年8月5日起在中国台湾地区重映数字修复版本。
+                <i id="qy" style="float:right;font-weight: bold;margin-left: -2em;cursor: pointer; color: dodgerblue;">查看详情</i>
+            </p>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -334,6 +358,7 @@
 
 <!--九宫格开始-->
 <div id="qx" style="margin-left:15%; width:80%; display: none;">
+    <h3 style="color: darkorchid;font-size: 18px;font-weight: bolder;">精彩剧照</h3>
     <div>
         <img src="images/l1.jpg" style="width: 30%;">
         <img src="images/l2.jpg" style="width: 30%;">
@@ -352,13 +377,17 @@
 </div>
 <!--九宫格结束-->
 
+<br><br>
+
 
 <!-- footer -->
 
 <div class="agileits-w3layouts-footer">
     <div class="container">
         <div class="agile-copyright">
-            <p>回味经典电影，拒绝流量垃圾</p>
+            <br>
+            <p style="font-weight: bolder;">品味经典电影，拒绝流量垃圾！</p>
+            <br>
         </div>
     </div>
 </div>

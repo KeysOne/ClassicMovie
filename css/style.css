@@ -28,10 +28,6 @@ body {
 }
 
 /*-- header-top --*/
-.header-top {
-    padding: 1em 0;
-    background: rgba(0, 0, 0, 0.52);
-}
 
 .header-left {
     float: left;
@@ -98,7 +94,7 @@ body {
 }
 
 .search {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-right: 2px;
     float: right;
 }
@@ -110,6 +106,11 @@ body {
 
 /*-- //header-top --*/
 .header_1 {
+    padding: 1em 0;
+    background: rgba(139, 135, 135, 0.52);
+}
+
+.header {
     padding: 1em 0;
     background: rgba(0, 0, 0, 0.52);
 }
@@ -446,13 +447,56 @@ body {
     outline: none;
 }
 
-#td {
+#t1 {
     text-decoration: none;
     float: right;
-    font-weight: bold;
     margin-top: 20px;
     font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ff994b;
 }
+
+#t2 {
+    text-decoration: none;
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ff994b;
+}
+
+#t3 {
+    text-decoration: none;
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ff994b;
+}
+
+#t4 {
+    text-decoration: none;
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ff994b;
+}
+
+#t5 {
+    text-decoration: none;
+    float: left;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ff994b;
+}
+
 /*-- //services --*/
 /*-- gallery --*/
 /*-- jzBox-lightbox --*/
@@ -698,21 +742,6 @@ i.fa.fa-quote-right {
     max-width: none;
     top: 10%;
     text-align: center;
-}
-
-.callbacks_nav {
-    position: absolute;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    top: 100px;
-    left: 0;
-    opacity: 0.6;
-    z-index: 3;
-    text-indent: -9999px;
-    overflow: hidden;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    background: transparent url("../images/arrows.png") no-repeat right top;
 }
 
 .callbacks_nav.next {
@@ -1002,18 +1031,6 @@ i.fa.fa-quote-right {
     z-index: 100;
 }
 
-.nbs-flexisel-nav-left {
-    left: 95%;
-    top: -25% !important;
-    background: url(../images/arrows1.png) no-repeat -14px 0px;
-}
-
-.nbs-flexisel-nav-right {
-    right: 0%;
-    top: -25% !important;
-    background: url(../images/arrows1.png) no-repeat 0px 0px;
-}
-
 /*--//flexisel--*/
 .pa_italic i {
     left: -1em;
@@ -1226,7 +1243,7 @@ button.btn1:hover {
 /*-- //subscribe --*/
 /*-- footer --*/
 .agileits-w3layouts-footer {
-    background: #0f1215;
+    background: #636060;
     padding: 4em 0 0 0;
     text-align: center;
     padding: 1em 0;
@@ -1887,18 +1904,75 @@ button.btn1:hover {
 }
 
 /*//九宫格css*/
-#panel div {
+#js div {
     overflow: hidden;
 }
 
-#panel div img {
+#js div img {
     cursor: pointer;
     transition: all 0.6s;
 }
 
-#panel div img:hover {
+#js div img:hover {
     transform: scale(0.9);
 }
 
+/*//九宫格css*/
+#cy div {
+    overflow: hidden;
+}
+
+#cy div img {
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#cy div img:hover {
+    transform: scale(0.9);
+}
+
+/*//九宫格css*/
+#btl div {
+    overflow: hidden;
+}
+
+#btl div img {
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#btl div img:hover {
+    transform: scale(0.9);
+}
+
+/*//九宫格css*/
+#df div {
+    overflow: hidden;
+}
+
+#df div img {
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#df div img:hover {
+    transform: scale(0.9);
+}
+
+/*//九宫格css*/
+#qx div {
+    overflow: hidden;
+}
+
+#qx div img {
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#qx div img:hover {
+    transform: scale(0.9);
+}
+
+/*//九宫格css*/
 
 
