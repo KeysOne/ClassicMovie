@@ -98,13 +98,14 @@ body {
 }
 
 .search {
-    border: 1px solid #d2cfcf;
     margin-top: 20px;
-
+    margin-right: 2px;
+    float: right;
 }
 
 #to250 {
     text-decoration: none;
+    font-weight: bold;
 }
 
 /*-- //header-top --*/
@@ -447,7 +448,10 @@ body {
 
 #td {
     text-decoration: none;
-    margin-top: 100px;
+    float: right;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
 }
 /*-- //services --*/
 /*-- gallery --*/
@@ -1381,7 +1385,7 @@ button.btn1:hover {
     }
 
     .header-middle ul li {
-        margin-right: 1em;
+        margin-right: 100em;
     }
 
     .navbar-toggle {
