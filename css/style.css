@@ -105,10 +105,6 @@ body {
 }
 
 /*-- //header-top --*/
-.header_1 {
-    padding: 1em 0;
-    background: rgba(139, 135, 135, 0.52);
-}
 
 .header {
     padding: 1em 0;
@@ -145,9 +141,52 @@ body {
     float: none;
 }
 
+.bgc {
+    animation: frams 16s infinite;
+}
+
+@keyframes frams {
+    0% {
+        height: 700px;
+        background-image: url("../images/1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    20% {
+        height: 700px;
+        background-image: url("../images/xsk_b1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    40% {
+        height: 700px;
+        background-image: url("../images/xsk_b2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    60% {
+        height: 700px;
+        background-image: url("../images/xsk_b3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    80% {
+        height: 700px;
+        background-image: url("../images/xsk_b4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    100% {
+        height: 700px;
+        background-image: url("../images/xsk_b5.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+}
+
 /*导航栏字体颜色配置*/
 .navbar-default .navbar-nav > li > a {
-    color: #5ef3cc;
+    color: #00ffbc;
     font-size: 1.2em;
     padding: 1.8em 0.5em;
     position: relative;
@@ -162,7 +201,7 @@ body {
     content: '';
     position: absolute;
     bottom: -2px;
-    background: #FFF;
+    background: #ffffff;
     height: 3px;
     width: 0;
     left: 0;

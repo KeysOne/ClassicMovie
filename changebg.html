@@ -1,7 +1,6 @@
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
 <style>
-    div#bg {
-        position: fixed;
+    div#bag {
         top: 0;
         left: 0;
         height: 100%;
@@ -13,7 +12,6 @@
         background-size: cover;
         -webkit-background-size: cover;
         -o-background-size: cover;
-        zoom: 1;
 
         opacity: 1;
         transition: opacity 1s linear;
@@ -22,12 +20,12 @@
         -o-transition: opacity 1s linear;
     }
 </style>
-<div id="bg"></div>
+<div id="bag"></div>
 <script>
     // 定义图片路径 {num} 为 可变的图片序号
     var bgImgUrl = 'images/{1,2,3,4,5}.jpg', bgNum,
         bgImgArr = [],
-        bgDiv = document.getElementById("bg");
+        bgDiv = document.getElementById("bag");
     // 组合数组 此处 200 为 图开始序号 结束 210
     for (var i = 1; i <= 5; i++) {
         bgImgArr.push(bgImgUrl.replace('{1,2,3,4,5}', i));
@@ -45,7 +43,7 @@
         if (typeof d == 'undefined')
             setInterval(function () {
                 setBGimg(true);
-            }, 6000);
+            }, 4000);
         // 上一行的 6000 是背景图片自动切换时间(单位 毫秒)
     }
 </script>
