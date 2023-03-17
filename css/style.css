@@ -466,7 +466,6 @@ body {
     cursor: pointer;
     color: #ff994b;
 }
-
 #t3 {
     text-decoration: none;
     float: right;
@@ -476,7 +475,6 @@ body {
     cursor: pointer;
     color: #ff994b;
 }
-
 #t4 {
     text-decoration: none;
     float: right;
@@ -486,7 +484,6 @@ body {
     cursor: pointer;
     color: #ff994b;
 }
-
 #t5 {
     text-decoration: none;
     float: left;
@@ -496,7 +493,6 @@ body {
     cursor: pointer;
     color: #ff994b;
 }
-
 /*-- //services --*/
 /*-- gallery --*/
 /*-- jzBox-lightbox --*/
@@ -1243,7 +1239,7 @@ button.btn1:hover {
 /*-- //subscribe --*/
 /*-- footer --*/
 .agileits-w3layouts-footer {
-    background: #636060;
+    background: #0f1215;
     padding: 4em 0 0 0;
     text-align: center;
     padding: 1em 0;
@@ -1916,7 +1912,6 @@ button.btn1:hover {
 #js div img:hover {
     transform: scale(0.9);
 }
-
 /*//九宫格css*/
 #cy div {
     overflow: hidden;
@@ -1930,7 +1925,6 @@ button.btn1:hover {
 #cy div img:hover {
     transform: scale(0.9);
 }
-
 /*//九宫格css*/
 #btl div {
     overflow: hidden;
@@ -1944,7 +1938,6 @@ button.btn1:hover {
 #btl div img:hover {
     transform: scale(0.9);
 }
-
 /*//九宫格css*/
 #df div {
     overflow: hidden;
@@ -1958,7 +1951,6 @@ button.btn1:hover {
 #df div img:hover {
     transform: scale(0.9);
 }
-
 /*//九宫格css*/
 #qx div {
     overflow: hidden;
