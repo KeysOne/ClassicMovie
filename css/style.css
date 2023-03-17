@@ -152,33 +152,27 @@ body {
         background-size: cover;
         background-repeat: no-repeat
     }
-    20% {
+    25% {
         height: 700px;
         background-image: url("../images/xsk_b1.jpg");
         background-size: cover;
         background-repeat: no-repeat
     }
-    40% {
+    50% {
         height: 700px;
         background-image: url("../images/xsk_b2.jpg");
         background-size: cover;
         background-repeat: no-repeat
     }
-    60% {
+    75% {
         height: 700px;
         background-image: url("../images/xsk_b3.jpg");
         background-size: cover;
         background-repeat: no-repeat
     }
-    80% {
-        height: 700px;
-        background-image: url("../images/xsk_b4.jpg");
-        background-size: cover;
-        background-repeat: no-repeat
-    }
     100% {
         height: 700px;
-        background-image: url("../images/xsk_b5.jpg");
+        background-image: url("../images/xsk_b4.jpg");
         background-size: cover;
         background-repeat: no-repeat
     }
@@ -2005,5 +1999,34 @@ button.btn1:hover {
 }
 
 /*//九宫格css*/
+
+/*彩蛋*/
+#eggs {
+    line-height: 2em;
+    font-size: 15px;
+    color: #636060;
+    display: none;
+    background-color: rgba(238, 238, 238, 0.6);
+}
+
+/*彩蛋*/
+/*获奖*/
+table {
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    text-align: center;
+}
+
+table th {
+    text-align: center;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+
+table td {
+    text-align: center;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
 
 
