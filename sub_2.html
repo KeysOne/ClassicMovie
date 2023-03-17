@@ -2,9 +2,397 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>星际穿越</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--// bootstrap-css -->
+    <!-- css样式 -->
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--// css样式 -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+        $(function () {
+            //返回顶端
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 700) {
+                    $("#toTop").fadeIn(200);
+                } else {
+                    $("#toTop").fadeOut(200);
+                }
+            });
+            //展示更多
+            $("#c1").click(function () {
+                $("#cy").slideToggle("slow");
+            });
+            $("#c2").click(function () {
+                $("#table").slideToggle("slow");
+            });
+            $("#c3").click(function () {
+                $("#eggs").slideToggle("slow");
+            });
+        })
+    </script>
 </head>
 <body>
+
+<div class="bg2">
+    <!--header-->
+    <div style="padding: 1em 0;background-color: rgba(0, 0, 0, 0.52);margin-top: 0;height: 120px">
+        <!--home-->
+        <div class="col-md-1">
+            <a href="index.html"><img alt="返回" class="img-rounded" src="images/back.png" width="30"></a>
+        </div>
+        <!--home-->
+
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <!--navbar-header-->
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="one"><a class="scroll" href="#xjcy">星际穿越</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--//header-->
+</div>
+
+<!-- 星际穿越 -->
+<div class="welcome" id="xjcy">
+    <div class="container">
+        <div class="col-md-6 agileits_welcome_grid_left">
+            <h3>星际穿越</h3>
+            <p style="font-size: 1.2em;text-indent: 2em;">近未来的地球黄沙遍野，小麦、秋葵等基础农作物相继因枯萎病灭绝，人类不再像从前那样仰望星空，放纵想象力和灵感的迸发，
+                而是每日在沙尘暴的肆虐下倒数着所剩不多的光景。在家务农的前NASA宇航员库珀 接连在女儿墨菲的书房发现奇怪的重力场现象，
+                随即得知在某个未知区域内前NASA成员仍秘密进行一个拯救人类的计划。多年以前土星附近出现神秘虫洞，NASA借机将数名宇航员派遣到遥远的星系寻找适合居住的星球。
+                在布兰德教授的劝说下，库珀忍痛告别了女儿，和其他三名专家教授女儿艾米莉亚·布兰德、罗米利、多伊尔搭乘宇宙飞船前往目前已知的最有希望的三颗星球考察。
+                他们穿越遥远的星系银河，感受了一小时七年光阴的沧海桑田，窥见了未知星球和黑洞的壮伟与神秘。在浩瀚宇宙的绝望而孤独角落，总有一份超越了时空的笃定情怀将他们紧紧相连……
+                <i id="c1" style="font-weight: bold;margin-left: -2em;cursor: pointer; color: #fc0cf8;">人物简介</i></p>
+        </div>
+        <div class="col-md-6 agileits_welcome_grid_right">
+            <img alt=" " height="80%" src="images/2_2.jpg" style="margin-left: 100px;" width=80%"/>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- //星际穿越-->
+<!-- services -->
+<div class="services" id="cy" style="display: none;">
+    <div class="container">
+        <h3>星际穿越人物介绍</h3>
+        <div class="agileinfo-services-grids">
+            <div class="col-md-6 services-grid">
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right agile-services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xjcy_a1.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left agile-services-grid-left">
+                        <h4>约瑟夫·库珀（Joseph Cooper）</h4>
+                        <p>前NASA宇航员，工程师。在人类遭受枯萎病肆虐的近未来，库珀被迫在家务农。他某天在女儿墨菲的书房发现了奇怪的重力场现象，由此发现了在某个未知区域内，
+                            前NASA成员仍秘密进行一个拯救人类的计划。在布兰德教授的劝说下，库珀忍痛告别女儿，
+                            和其他三名专家搭乘宇宙飞船前往已知的人类最有希望殖民的三颗星球考察。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right agile-services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xjcy_a2.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left agile-services-grid-left">
+                        <h4>墨菲（Murphy Cooper）</h4>
+                        <p>库珀的女儿。加入了NASA，跟布兰德教授一起研究人类移居外星计划。对于父亲库珀当初的离去一直耿耿于怀。在布兰德教授临死之际得知A计划只是谎言。
+                            走投无路的她回到以前住的地方，在那里努力搜寻并研究父亲留下的痕迹，最终领悟到了父亲从遥远太空发来的信息，
+                            并破解了布兰德教授的方程，成功带领人类移居土星空间。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-6 services-grid">
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xjcy_a3.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left services-grid-left1">
+                        <h4>艾米莉亚·布兰德（Amelia Brand）</h4>
+                        <p>布兰德教授的女儿，生物技术博士。她与库珀及另外两位专家一起前往宇宙去考察人类有可能殖民的三个星球。他们在米勒星遭遇巨型海啸的袭击导致考察失败，
+                            且由于引力作用，地球时间已经度过了23年。他们又在曼恩星遭到了曼恩博士的欺骗，导致永济号损坏，资源无法返回地球。她在库珀的帮助下，只得孤身前往埃德蒙斯星。
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xjcy_a4.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left services-grid-left1">
+                        <h4>约翰·布兰德（John Brand）</h4>
+                        <p>艾米莉亚的父亲，人类移居外星计划的策划及负责人。他希望库珀能够驾驶航天器并与自己的女儿艾米莉亚及另外两位专家一起前往宇宙，执行拯救人类的拉撒路计划。
+                            他让库珀的女儿墨菲加入了NASA，并协助自己去解开拯救地球人类所需要的重力方程，但23年后，在他病重弥留之际，他向墨菲承认A计划是他的谎言，不可能实现。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- //services -->
+<!--table-->
+<div style="margin-left:240px;">
+    <h4 id="c2" style="color: #fdcf00;font-weight: bolder;margin-left: -2em;cursor: pointer;">收获荣誉</h4>
+</div>
+<br>
+<div id="table" style="display: none;background-color: rgba(238,238,238,0.6);">
+    <br><br><br>
+    <table style="margin-left:260px; width: 60%;height: 60%;align-content: center">
+        <tbody>
+        <tr>
+            <th><br>年份</th>
+            <th><br>届次</th>
+            <th><br>奖项</th>
+            <th><br>类型<br></th>
+            <th><br>获奖对象<br></th>
+            <th><br>结果</th>
+        </tr>
+        <tr>
+            <td rowspan="5"><br>2015<br>年</td>
+            <td rowspan="5"><br>第87届</td>
+            <td rowspan="5"><br>奥斯卡金像奖<br>
+                <img src="images/ask.jpeg" style="width: 50%"></td>
+            <td><br>最佳配乐</td>
+            <td><br>汉斯·季默</td>
+            <td rowspan="4"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳音效剪辑</td>
+            <td><br>理查德·金</td>
+        </tr>
+        <tr>
+            <td><br>最佳音效</td>
+            <td><br>Gary A. Rizzo、Gregg Landaker、<br>Mark Weingarten</td>
+        </tr>
+        <tr>
+            <td><br>最佳艺术指导</td>
+            <td><br>内森·克劳利<br>、Gary Fettis</td>
+        </tr>
+        <tr>
+            <td><br>最佳视觉效果</td>
+            <td><br>Paul Franklin、安德鲁·洛克利、<br>伊恩·亨特、Scott Fisher</td>
+            <td><br>获奖</td>
+        </tr>
+        <tr>
+            <td rowspan="4"><br>2015<br>年</td>
+            <td rowspan="4"><br>第68届</td>
+            <td rowspan="4"><br>英国电影学院奖</td>
+            <td><br>最佳原创音乐</td>
+            <td><br>汉斯·季默</td>
+            <td rowspan="3"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳摄影</td>
+            <td><br>霍伊特·范·霍特玛</td>
+        </tr>
+        <tr>
+            <td><br>最佳艺术指导</td>
+            <td><br>内森·克劳利、Gary Fettis</td>
+        </tr>
+        <tr>
+            <td><br>最佳视觉效果</td>
+            <td><br>Paul Franklin、Scott Fisher、<br>安德鲁·洛克利</td>
+            <td><br>获奖</td>
+        </tr>
+        <tr>
+            <td><br>2014<br>年</td>
+            <td><br>第14届</td>
+            <td><br>美国电影学会奖</td>
+            <td><br>年度十佳电影</td>
+            <td><br>艾玛·托马斯、克里斯托弗·诺兰、<br>莲达·奥布斯特</td>
+            <td><br>获奖</td>
+        </tr>
+        <tr>
+            <td rowspan="4"><br>2014<br>年</td>
+            <td rowspan="4"><br>第27届</td>
+            <td rowspan="4"><br>芝加哥影评人协会奖</td>
+            <td><br>最佳导演</td>
+            <td><br>克里斯托弗·诺兰</td>
+            <td rowspan="4"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳艺术指导</td>
+            <td><br>《星际穿越》</td>
+        </tr>
+        <tr>
+            <td><br>最佳摄影</td>
+            <td><br>霍伊特·范·霍特玛</td>
+        </tr>
+        <tr>
+            <td><br>最佳原创配乐</td>
+            <td><br>汉斯·季默</td>
+        </tr>
+        <tr>
+            <td><br>2015<br>年</td>
+            <td><br>第72届</td>
+            <td><br>金球奖</td>
+            <td><br>最佳原创配乐</td>
+            <td><br>汉斯·季默</td>
+            <td><br>提名</td>
+        </tr>
+        <tr>
+            <td rowspan="6"><br>2014<br>年</td>
+            <td rowspan="6"><br>第15届</td>
+            <td rowspan="6"><br>凤凰城影评人协会奖</td>
+            <td><br>最佳原创配乐</td>
+            <td><br>汉斯·季默</td>
+            <td rowspan="5"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳摄影</td>
+            <td><br>霍伊特·范·霍特玛</td>
+        </tr>
+        <tr>
+            <td><br>最佳剪辑</td>
+            <td><br>李·史密斯</td>
+        </tr>
+        <tr>
+            <td><br>最佳制作设计</td>
+            <td><br>内森·克劳利</td>
+        </tr>
+        <tr>
+            <td><br>最佳年轻演出-女<br></td>
+            <td><br>麦肯基·弗依<br></td>
+        </tr>
+        <tr>
+            <td><br>最佳视觉效果<br></td>
+            <td><br>安德鲁·洛克利、伊恩·亨特<br></td>
+            <td><br>获奖<br></td>
+        </tr>
+        <tr>
+            <td rowspan="2"><br>2014年</td>
+            <td rowspan="2"><br>第19届</td>
+            <td rowspan="2"><br>圣地亚哥影评人协会奖</td>
+            <td><br>最佳摄影</td>
+            <td><br>霍伊特·范·霍特玛</td>
+            <td rowspan="2"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳制作设计</td>
+            <td><br>内森·克劳利</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><br>2014年</td>
+            <td rowspan="3"><br>第19届</td>
+            <td rowspan="3"><br>金卫星奖</td>
+            <td><br>最佳摄影</td>
+            <td><br>霍伊特·范·霍特玛</td>
+            <td rowspan="3"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳原创配乐</td>
+            <td><br>汉斯·季默</td>
+        </tr>
+        <tr>
+            <td><br>最佳视觉效果</td>
+            <td><br>Paul Franklin、Scott Fisher、<br>安德鲁·洛克利、伊恩·亨特</td>
+        </tr>
+        <tr>
+            <td rowspan="5"><br>2014年</td>
+            <td rowspan="5"><br>第13届</td>
+            <td rowspan="5"><br>华盛顿影评人协会奖</td>
+            <td><br>最佳美术指导</td>
+            <td><br>内森·克劳利、Gary Fettis</td>
+            <td rowspan="5"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳摄影</td>
+            <td><br>霍伊特·范·霍特玛</td>
+        </tr>
+        <tr>
+            <td><br>最佳剪辑</td>
+            <td><br>李·史密斯</td>
+        </tr>
+        <tr>
+            <td><br>最佳原创配乐</td>
+            <td><br>汉斯·季默</td>
+        </tr>
+        <tr>
+            <td><br>最佳年轻演出</td>
+            <td><br>麦肯基·弗依</td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 12%;">
+            <col style="width: 10.5556%;">
+            <col style="width: 27.4444%;">
+            <col style="width: 20.6667%;">
+            <col style="width: 16.6667%;">
+            <col style="width: 16.6667%;">
+        </colgroup>
+    </table>
+    <br><br><br>
+</div>
+<!--table-->
+<br><br>
+<div style="margin-left: 200px">
+    <h3 id="c3" style="color: #7032ff;font-size:20px;font-weight: bold;cursor: pointer;">幕后花絮</h3><br></div>
+<!--幕后花絮-->
+<div id="eggs">
+    <br><br><br>
+    <ul style="margin-left: 150px;">
+        <li>该片主人公女儿的名字墨菲出自墨菲定律，定律的核心是“事情如果有变坏的可能，不管这种可能性有多小，它总会发生”，暗合该片主旨。</li>
+        <li>马修·麦康纳表示，他自己没有试镜，只是到诺兰家跟导演聊了三小时。一周后读过剧本，便确定加盟。</li>
+        <li>该片拍摄时，演员们在看向窗外时不必假装看到了太空，因为诺兰在片场周围设置了环绕型巨幕，上面展示着黑洞和不断旋转着的星星。</li>
+        <li>诺兰的长期合作伙伴传奇影业与老东家华纳公司分道扬镳，为了得到投资该片的机会，传奇放弃了参与《蝙蝠侠大战超人：正义黎明》的计划。</li>
+        <li>该片拍摄期间曾使用假名《芙萝拉的信》，芙萝拉是诺兰女儿的名字。</li>
+        <li>该片是最后一部使用70mm胶片拍摄的IMAX商业电影。</li>
+        <li>在洛杉矶原先打造《黑暗骑士》三部曲蝙蝠洞的地方，诺兰制作了一个完全密闭的太空舱，灵感源自NASA设计。</li>
+        <li>安妮·海瑟薇曾为《蝙蝠侠：黑暗骑士崛起》里的猫女角色训练了四个月，诺兰向她保证她无需在该片拍摄过程中经历严苛的训练，但是她不信。</li>
+        <li>好莱坞速报表示，克里斯托弗的酬金是2000万美元，而非电影销售额的20%（约121万美元）。</li>
+        <li>为了研究电影的拍摄，克里斯托弗参观了美国太空总署以及私营的航天公司太空探索科技公司。</li>
+        <li>Mashable的评论员Christina Warren指出黑洞的吸积盘并不合乎科学：其释放出的高能量X射线本应烧毁了片中的太空船和船员 。</li>
+        <li>该片中没有明确提及黑洞吸积盘是由什么组成的，释出的光线颜色也本应因为多普勒效应而有所不同才对。</li>
+        <li>接近黑洞，就会被黑洞的潮汐力撕得粉碎，任何东西都不例外。男女主角在靠近黑洞的行星上，这个靠近的概念是多远的距离，影片没有交代清楚。</li>
+    </ul>
+    <br><br><br>
+</div>
+<!--幕后花絮-->
+<br><br><br><br><br><br><br><br>
+
+<!--回到顶部-->
+<a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span>To Top</a>
+<!--//回到顶部-->
 
 </body>
 </html>

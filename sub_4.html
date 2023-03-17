@@ -2,9 +2,387 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>肖申克的救赎</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--// bootstrap-css -->
+    <!-- css样式 -->
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--// css样式 -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+        $(function () {
+            //返回顶端
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 700) {
+                    $("#toTop").fadeIn(200);
+                } else {
+                    $("#toTop").fadeOut(200);
+                }
+            });
+            //展示更多
+            $("#c1").click(function () {
+                $("#djs").slideToggle("slow");
+            });
+            $("#c2").click(function () {
+                $("#table").slideToggle("slow");
+            });
+            $("#c3").click(function () {
+                $("#eggs").slideToggle("slow");
+            });
+        })
+    </script>
 </head>
 <body>
+
+<div class="bg1">
+    <!--header-->
+    <div style="padding: 1em 0;background-color: rgba(0, 0, 0, 0.52);margin-top: 0;height: 120px">
+        <!--home-->
+        <div class="col-md-1">
+            <a href="index.html"><img alt="返回" class="img-rounded" src="images/back.png" width="30"></a>
+        </div>
+        <!--home-->
+
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <!--navbar-header-->
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="one"><a class="scroll" href="#xskdjs">肖申克的救赎</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--//header-->
+</div>
+
+<!-- 肖申克的救赎 -->
+<div class="welcome" id="xskdjs">
+    <div class="container">
+        <div class="col-md-6 agileits_welcome_grid_left">
+            <h3>肖申克的救赎</h3>
+            <p style="font-size: 1.2em;text-indent: 2em;">一场谋杀案使银行家安迪蒙冤入狱，谋杀妻子及其情人的指控将囚禁他终生。
+                在肖申克监狱的首次现身就让监狱“大哥”瑞德对他另眼相看。瑞德帮助他搞到一把石锤和一幅女明星海报，两人渐成患难之交。
+                很快，安迪在监狱里大显其才，担当监狱图书管理员，并利用自己的金融知识帮助监狱官避税，引起了典狱长的注意，被招致麾下帮助典狱长洗黑钱。
+                偶然一次，他得知一名新入狱的小偷能够作证帮他洗脱谋杀罪。燃起一丝希望的安迪找到了典狱长，希望他能帮自己翻案。阴险伪善的狱长假装答应安迪，背后却派人杀死小偷，
+                让他唯一能合法出狱的希望泯灭。
+                沮丧的安迪并没有绝望，在一个电闪雷鸣的风雨夜，一场暗藏几十年的越狱计划让他自我救赎，重获自由！老朋友瑞德在他的鼓舞和帮助下，也勇敢地奔向自由。
+                <i id="c1" style="font-weight: bold;margin-left: -2em;cursor: pointer; color: #fc0cf8;">人物简介</i></p>
+        </div>
+        <div class="col-md-6 agileits_welcome_grid_right">
+            <img alt=" " height="80%" src="images/1_2.jpg" style="margin-left: 100px;" width=80%"/>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- //肖申克的救赎-->
+<!-- services -->
+<div class="services" id="djs" style="display: none;">
+    <div class="container">
+        <h3>肖申克的救赎人物介绍</h3>
+        <div class="agileinfo-services-grids">
+            <div class="col-md-6 services-grid">
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right agile-services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xsk_a1.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left agile-services-grid-left">
+                        <h4>安迪·杜佛兰（Andy Dufresne）</h4>
+                        <p>银行家。被误当成杀妻凶手而被判无期徒刑，并关进肖申克监狱。在监狱中，他与瑞德等人成了朋友，他创办了新的监狱图书室,
+                            还利用自己的知识帮助大家打点自己的财务，典狱长发现他的理财特长后让他帮助自己清洗黑钱做假账。在监狱服役的19年间，
+                            他利用从瑞德那里买来的小锤子挖出了一条逃狱通道，并重获新生。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right agile-services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xsk_a3.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left agile-services-grid-left">
+                        <h4>塞缪尔·诺顿（Samuel Norton）</h4>
+                        <p>肖申克监狱的监狱长。当得知了安迪的理财能力之后，他开始利用安迪替自己洗黑钱，做假账。并且在新囚犯汤米向安迪讲述了安迪蒙冤入狱的实情之后，
+                            诺顿不想让安迪翻案，便找机会暗杀了汤米。安迪成功逃狱之后，揭发了诺顿的罪行，诺顿只得自食其果。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right agile-services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xsk_a5.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left agile-services-grid-left">
+                        <h4>汤米·威廉姆斯（Tommy Williams）（Revali)</h4>
+                        <p>肖申克监狱的监狱长。当得知了安迪的理财能力之后，他开始利用安迪替自己洗黑钱，做假账。并且在新囚犯汤米向安迪讲述了安迪蒙冤入狱的实情之后，
+                            诺顿不想让安迪翻案，便找机会暗杀了汤米。安迪成功逃狱之后，揭发了诺顿的罪行，诺顿只得自食其果。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-6 services-grid">
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xsk_a2.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left services-grid-left1">
+                        <h4>埃利斯·“瑞德”·雷丁（Ellis Boyd "Red" Redding）</h4>
+                        <p>肖申克监狱的囚犯，因谋杀被判无期徒刑。他在狱中有门路向狱友们有偿提供各种违禁品。与安迪结为好友后，为安迪提供了小锤子、海报等各类物品。
+                            曾经数次申请假释，但均被驳回。安迪逃狱后的几年，瑞德终于申请假释成功，出狱并回归社会，后来，他前往与安迪约定好的地方，两人得以重逢。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xsk_a5.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left services-grid-left1">
+                        <h4>布鲁克斯·海特伦（Brooks Hatlen）</h4>
+                        <p>肖申克监狱的囚犯，被狱友们称作“老布”，负责监狱里的图书馆，他与一只小鸟作伴。狱警将安迪安排到老布这里方便安迪为狱警们办理避税。老布与安迪成了朋友。
+                            后来，老布面对刑满释放的机会他却宁愿以身试法也不愿离开监狱，因为在监狱服役50年的他，已经习惯了监狱里的体制化，
+                            外面的新世界使他处处不适应，无法生存。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="services-grid1">
+                    <div class="col-md-4 services-grid-right">
+                        <div class="services-grid-right-grid hvr-radial-out">
+                            <span aria-hidden="true"></span>
+                            <div><img src="images/xsk_a6.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 services-grid-left services-grid-left1">
+                        <h4>拜伦·哈德利（Byron Hadley）</h4>
+                        <p>
+                            肖申克监狱的警卫队长，也是监狱长诺顿的心腹之人。他为人残暴，经常殴打囚犯。有次，他继承了一笔遗产，却因为需要缴纳大量税金而烦恼，安迪利用自己的财务知识替他解决了问题。在监狱长被安迪举报之后，他也受到了应有的惩罚。</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- //services -->
+<!--table-->
+<div style="margin-left:240px;">
+    <h4 id="c2" style="color: #fdcf00;font-weight: bolder;margin-left: -2em;cursor: pointer;">收获荣誉</h4>
+</div>
+<br>
+<div id="table" style="display: none;background-color: rgba(238,238,238,0.6);">
+    <br><br><br>
+    <table style="margin-left:260px; width: 60%;height: 60%;align-content: center">
+        <tbody>
+        <tr>
+            <th>时间</th>
+            <th>届次</th>
+            <th>奖项</th>
+            <th>类型</th>
+            <th>获奖对象</th>
+            <th>结果</th>
+        </tr>
+        <tr>
+            <td rowspan="7"><br>1995年</td>
+            <td rowspan="7"><br>第67届</td>
+            <td rowspan="7"><br>奥斯卡金像奖
+                <br><img src="images/ask.jpeg" style="width: 50%"></td>
+            <td><br>最佳影片</td>
+            <td><br>妮基·马文（制片人）</td>
+            <td rowspan="7"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳男主角</td>
+            <td><br>摩根·弗里曼</td>
+        </tr>
+        <tr>
+            <td><br>最佳改编剧本</td>
+            <td><br>弗兰克·德拉邦特<br></td>
+        </tr>
+        <tr>
+            <td><br>最佳摄影</td>
+            <td><br>罗杰·狄金斯<br></td>
+        </tr>
+        <tr>
+            <td><br>最佳音响</td>
+            <td><br>罗伯特·J·利特、<br>Elliot Tyson、<br>Michael Herbick、<br>Willie Burto</td>
+        </tr>
+        <tr>
+            <td><br>最佳电影剪辑</td>
+            <td><br>理查德·弗朗西斯-布鲁</td>
+        </tr>
+        <tr>
+            <td><br>最佳配乐</td>
+            <td><br>托玛斯·纽曼<br>斯</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><br>1995年<br></td>
+            <td rowspan="2"><br>第52届</td>
+            <td rowspan="2"><br>金球奖
+                <br><img src="images/jq.jpeg" style="width: 50%"></td>
+            <td><br>剧情类电影最佳男主角</td>
+            <td><br>摩根·弗里曼</td>
+            <td rowspan="2"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳编剧</td>
+            <td><br>弗兰克·德拉邦特<br></td>
+        </tr>
+        <tr>
+            <td><br>1995年</td>
+            <td><br>第1届</td>
+            <td><br>美国演员工会奖
+                <br><img src="images/mgyy.jpeg" style="width: 50%"></td>
+            <td><br>最佳男主角</td>
+            <td><br>蒂姆·罗宾斯/<br>摩根·弗里曼</td>
+            <td><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>1994年</td>
+            <td><br>第47届</td>
+            <td><br>美国编剧工会奖
+                <br><img src="images/mgbj.jpeg" style="width: 50%"></td>
+            <td><br>最佳改编剧本奖</td>
+            <td><br>弗兰克·德拉邦特</td>
+            <td><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>1994年</td>
+            <td><br>第47届</td>
+            <td><br>美国导演工会奖
+                <br><img src="images/mgdy.jpeg" style="width: 50%"></td>
+            <td><br>长片电影最佳导演奖</td>
+            <td><br>弗兰克·德拉邦特</td>
+            <td><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>1994年</td>
+            <td><br>第9届</td>
+            <td><br>美国电影摄影师协会
+                <br><img src="images/mgsy.jpeg" style="width: 50%"></td>
+            <td><br>院线发行电影<br>摄影杰出成就奖</td>
+            <td><br>罗杰·狄金斯</td>
+            <td><br>获奖</td>
+        </tr>
+        <tr>
+            <td><br>1994年</td>
+            <td><br>第6届</td>
+            <td><br>金桂冠奖</td>
+            <td><br>优秀电影制片人</td>
+            <td><br>妮基·马文</td>
+            <td><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>1995年</td>
+            <td><br>第19届</td>
+            <td><br>日本电影学院奖
+                <br><img src="images/rbdy.jpeg" style="width: 50%"></td>
+            <td><br>最佳外语片</td>
+            <td><br>《肖申克的救赎》</td>
+            <td><br>获奖</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><br>1995年</td>
+            <td rowspan="3"><br>第21届</td>
+            <td rowspan="3"><br>土星奖
+                <br><img src="images/tx.jpeg" style="width: 50%"></td>
+            <td><br>最佳动作/冒险片</td>
+            <td><br>《肖申克的救赎》</td>
+            <td rowspan="3"><br>提名</td>
+        </tr>
+        <tr>
+            <td><br>最佳编剧</td>
+            <td><br>弗兰克·德拉邦特</td>
+        </tr>
+        <tr>
+            <td><br>最佳DVD/蓝光套装</td>
+            <td><br>《肖申克的救赎》</td>
+        </tr>
+
+        </tbody>
+        <colgroup>
+            <col style="width: 12%;">
+            <col style="width: 10.5556%;">
+            <col style="width: 27.4444%;">
+            <col style="width: 20.6667%;">
+            <col style="width: 16.6667%;">
+            <col style="width: 16.6667%;">
+        </colgroup>
+    </table>
+    <br><br><br>
+</div>
+<!--table-->
+<br><br>
+<div style="margin-left: 200px">
+    <h3 id="c3" style="color: #7032ff;font-size:20px;font-weight: bold;cursor: pointer;">幕后花絮</h3><br></div>
+<!--幕后花絮-->
+<div id="eggs">
+    <br><br><br>
+    <ul style="margin-left: 150px;">
+        <li>片中，在一开始的法庭戏中，安迪说自己把枪扔进了Royal河，在原作者斯蒂芬·埃德温·金的另一本小说《尸体》中，逃亡的孩子们也穿过了同一条河。</li>
+        <li>影片开头安迪上枪膛的手是导演的，这些特写是后期制作加上的。</li>
+        <li>片中，安迪牢房的墙上贴着一张爱因斯坦的照片，因为安迪的饰演者蒂姆·罗宾斯曾出演过关于爱因斯坦的科幻电影《I.Q.》（1994年）。</li>
+        <li>片中，犯人们看的那部关于美国爱神丽塔·海华丝的影片的名字是《吉尔达》。</li>
+        <li>片中，监狱长诺顿所哼唱的调子是《坚固保障》，这是一首教会圣诗，作者是基督教改革者兼信义会创始人马丁·路德。</li>
+        <li>片中，当监狱长诺顿打开藏有安迪凿石锤的《圣经》时，打开的那页正是《出埃及记》，这个章节详细地描述了犹太教徒逃离埃及的过程。</li>
+        <li>该片的情节中，有多处与大仲马的《基督山伯爵》相似。</li>
+        <li>美国人道主义协会监督了影片中所有涉及到布鲁克斯的乌鸦的拍摄过程。有一场戏是布鲁克斯给他的乌鸦喂蛆虫，该协会认为这对蛆是不“人道”的，<br>
+            并要求他们改用一只自然死亡的蛆，剧组只好从命。
+        </li>
+        <li>导演弗兰克·德拉邦特拍摄期间的每个周末都看《好家伙》这部电影，并从中得到灵感，使用了画外音来转场。</li>
+        <li>该片的意大利版要比美国版少15分钟，删去了结尾简要交待安迪自由生活的片段。</li>
+        <li>演员摩根·弗里曼表示，摄制工作十分紧张，演员和导演大部分时候关系紧张，他有时候也和导演合不来。导演德拉邦特要求部分镜头拍摄多次，但弗里曼觉得其中并没有明显区别。<br>
+            例如安迪首次找上瑞德购买石锤的戏段就花掉九小时的拍摄时间，弗里曼接投棒球的桥段也反复NG，以致次日他来到片场时手臂都缠着吊带。<br>
+            弗里曼有时甚至拒绝拍摄感觉多余的重复镜头。演员罗宾斯也表示电影的摄制过程漫长又艰辛。
+        </li>
+        <li>导演德拉邦特用5千美元买下该片的改编权，原著斯蒂芬一直没有兑换这5千美元支票，他后来把支票装裱起来送回德拉邦特手中，
+            并附上说明：“为防万一哪天你需要保释金。<br>爱你的斯蒂芬”。
+        </li>
+        <li>安迪牢房里出现的第三张海报中的女性拉蔻儿·薇芝来自于电影《公元前一百万年》，但这个电影直到1967年2月21日（也就是片中安迪脱狱之后数月）才在美国公映，
+            属于穿帮内容。
+        </li>
+    </ul>
+    <br><br><br>
+</div>
+<!--幕后花絮-->
+<br><br><br><br><br><br><br><br>
+
+<!--回到顶部-->
+<a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span>To Top</a>
+<!--//回到顶部-->
 
 </body>
 </html>

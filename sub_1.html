@@ -30,11 +30,14 @@
             });
         });
         $(function () {
-            /*文字改变*/
-            $(".header .container nav div ul li").click(function () {
-                $(".w3layouts-text .item").hide();
-                $(".w3layouts-text .item").eq($(".header .container nav div ul li").index(this)).show();
-            })
+            //返回顶端
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 700) {
+                    $("#toTop").fadeIn(200);
+                } else {
+                    $("#toTop").fadeOut(200);
+                }
+            });
             //展示更多
             $("#c1").click(function () {
                 $("#djs").slideToggle("slow");
@@ -50,7 +53,7 @@
 </head>
 <body>
 
-<div class="bgc">
+<div class="bg1">
     <!--header-->
     <div style="padding: 1em 0;background-color: rgba(0, 0, 0, 0.52);margin-top: 0;height: 120px">
         <!--home-->
@@ -120,13 +123,13 @@
                     <div class="col-md-4 services-grid-right agile-services-grid-right">
                         <div class="services-grid-right-grid hvr-radial-out">
                             <span aria-hidden="true"></span>
-                            <div><img src="images/xsk_a2.png"></div>
+                            <div><img src="images/xsk_a3.png"></div>
                         </div>
                     </div>
                     <div class="col-md-8 services-grid-left agile-services-grid-left">
-                        <h4>埃利斯·“瑞德”·雷丁（Ellis Boyd "Red" Redding）</h4>
-                        <p>肖申克监狱的囚犯，因谋杀被判无期徒刑。他在狱中有门路向狱友们有偿提供各种违禁品。与安迪结为好友后，为安迪提供了小锤子、海报等各类物品。
-                            曾经数次申请假释，但均被驳回。安迪逃狱后的几年，瑞德终于申请假释成功，出狱并回归社会，后来，他前往与安迪约定好的地方，两人得以重逢。</p>
+                        <h4>塞缪尔·诺顿（Samuel Norton）</h4>
+                        <p>肖申克监狱的监狱长。当得知了安迪的理财能力之后，他开始利用安迪替自己洗黑钱，做假账。并且在新囚犯汤米向安迪讲述了安迪蒙冤入狱的实情之后，
+                            诺顿不想让安迪翻案，便找机会暗杀了汤米。安迪成功逃狱之后，揭发了诺顿的罪行，诺顿只得自食其果。</p>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -134,11 +137,11 @@
                     <div class="col-md-4 services-grid-right agile-services-grid-right">
                         <div class="services-grid-right-grid hvr-radial-out">
                             <span aria-hidden="true"></span>
-                            <div><img src="images/xsk_a3.png"></div>
+                            <div><img src="images/xsk_a5.png"></div>
                         </div>
                     </div>
                     <div class="col-md-8 services-grid-left agile-services-grid-left">
-                        <h4>塞缪尔·诺顿（Samuel Norton）</h4>
+                        <h4>汤米·威廉姆斯（Tommy Williams）（Revali)</h4>
                         <p>肖申克监狱的监狱长。当得知了安迪的理财能力之后，他开始利用安迪替自己洗黑钱，做假账。并且在新囚犯汤米向安迪讲述了安迪蒙冤入狱的实情之后，
                             诺顿不想让安迪翻案，便找机会暗杀了汤米。安迪成功逃狱之后，揭发了诺顿的罪行，诺顿只得自食其果。</p>
                     </div>
@@ -150,13 +153,13 @@
                     <div class="col-md-4 services-grid-right">
                         <div class="services-grid-right-grid hvr-radial-out">
                             <span aria-hidden="true"></span>
-                            <div><img src="images/xsk_a4.png"></div>
+                            <div><img src="images/xsk_a2.png"></div>
                         </div>
                     </div>
                     <div class="col-md-8 services-grid-left services-grid-left1">
-                        <h4>布鲁克斯·海特伦（Brooks Hatlen）</h4>
-                        <p>肖申克监狱的囚犯，被狱友们称作“老布”，负责监狱里的图书馆，他与一只小鸟作伴。狱警将安迪安排到老布这里方便安迪为狱警们办理避税。老布与安迪成了朋友。
-                            后来，老布面对刑满释放的机会他却宁愿以身试法也不愿离开监狱，因为在监狱服役50年的他，已经习惯了监狱里的体制化，外面的新世界使他处处不适应，无法生存。</p>
+                        <h4>埃利斯·“瑞德”·雷丁（Ellis Boyd "Red" Redding）</h4>
+                        <p>肖申克监狱的囚犯，因谋杀被判无期徒刑。他在狱中有门路向狱友们有偿提供各种违禁品。与安迪结为好友后，为安迪提供了小锤子、海报等各类物品。
+                            曾经数次申请假释，但均被驳回。安迪逃狱后的几年，瑞德终于申请假释成功，出狱并回归社会，后来，他前往与安迪约定好的地方，两人得以重逢。</p>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -164,13 +167,14 @@
                     <div class="col-md-4 services-grid-right">
                         <div class="services-grid-right-grid hvr-radial-out">
                             <span aria-hidden="true"></span>
-                            <div><img src="images/xsk_a5.png"></div>
+                            <div><img src="images/xsk_a4.png"></div>
                         </div>
                     </div>
                     <div class="col-md-8 services-grid-left services-grid-left1">
-                        <h4>汤米·威廉姆斯（Tommy Williams）（Revali)</h4>
-                        <p>肖申克监狱的囚犯。曾多次因为盗窃罪入狱，在多个不同监狱服役过。他不识字，他拜安迪为师想要考个学历，安迪觉得他有天赋，很喜欢他。某次，在与瑞德闲聊时，
-                            汤米发现自己与安迪杀妻案的真正凶手在同一间牢房待过。他将事实告诉安迪后，安迪想要翻案，典狱长怕安迪出狱后无人再帮他洗钱，而在暗中伸出黑手。</p>
+                        <h4>布鲁克斯·海特伦（Brooks Hatlen）</h4>
+                        <p>肖申克监狱的囚犯，被狱友们称作“老布”，负责监狱里的图书馆，他与一只小鸟作伴。狱警将安迪安排到老布这里方便安迪为狱警们办理避税。老布与安迪成了朋友。
+                            后来，老布面对刑满释放的机会他却宁愿以身试法也不愿离开监狱，因为在监狱服役50年的他，已经习惯了监狱里的体制化，
+                            外面的新世界使他处处不适应，无法生存。</p>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -375,5 +379,10 @@
 </div>
 <!--幕后花絮-->
 <br><br><br><br><br><br><br><br>
+
+<!--回到顶部-->
+<a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span>To Top</a>
+<!--//回到顶部-->
+
 </body>
 </html>

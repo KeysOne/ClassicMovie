@@ -141,38 +141,99 @@ body {
     float: none;
 }
 
-.bgc {
-    animation: frams 16s infinite;
+.bg1 {
+    animation: xsk 16s infinite;
 }
 
-@keyframes frams {
+.bg2 {
+    animation: xjcy 16s infinite;
+}
+
+@keyframes xjcy {
     0% {
         height: 700px;
-        background-image: url("../images/1.jpg");
+        background-image: url("../images/xjcy_b1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    15% {
+        height: 700px;
+        background-image: url("../images/xjcy_b1.jpg");
         background-size: cover;
         background-repeat: no-repeat
     }
     25% {
         height: 700px;
-        background-image: url("../images/xsk_b1.jpg");
+        background-image: url("../images/xjcy_b2.jpg");
         background-size: cover;
         background-repeat: no-repeat
     }
     50% {
         height: 700px;
-        background-image: url("../images/xsk_b2.jpg");
+        background-image: url("../images/xjcy_b3.jpg");
         background-size: cover;
         background-repeat: no-repeat
     }
-    75% {
+    65% {
         height: 700px;
-        background-image: url("../images/xsk_b3.jpg");
+        background-image: url("../images/xjcy_b4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    80% {
+        height: 700px;
+        background-image: url("../images/xjcy_b5.jpg");
         background-size: cover;
         background-repeat: no-repeat
     }
     100% {
         height: 700px;
-        background-image: url("../images/xsk_b4.jpg");
+        background-image: url("../images/xjcy_b6.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+}
+
+@keyframes xsk {
+    0% {
+        height: 700px;
+        background-image: url("../images/xsk_b1.png");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    15% {
+        height: 700px;
+        background-image: url("../images/xsk_b1.png");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    25% {
+        height: 700px;
+        background-image: url("../images/xsk_b2.png");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    50% {
+        height: 700px;
+        background-image: url("../images/xsk_b3.png");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    65% {
+        height: 700px;
+        background-image: url("../images/xsk_b4.png");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    80% {
+        height: 700px;
+        background-image: url("../images/xsk_b5.png");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    100% {
+        height: 700px;
+        background-image: url("../images/xsk_b6.png");
         background-size: cover;
         background-repeat: no-repeat
     }
@@ -1272,8 +1333,7 @@ button.btn1:hover {
 /*-- //subscribe --*/
 /*-- footer --*/
 .agileits-w3layouts-footer {
-    background: #0f1215;
-    padding: 4em 0 0 0;
+    background: rgba(15, 18, 21, 0.51);
     text-align: center;
     padding: 1em 0;
 }
