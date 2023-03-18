@@ -149,6 +149,104 @@ body {
     animation: xjcy 16s infinite;
 }
 
+.bg3 {
+    animation: zgss 16s infinite;
+}
+
+.bg4 {
+    animation: rzdf 16s infinite;
+}
+
+@keyframes rzdf {
+    0% {
+        height: 700px;
+        background-image: url("../images/rzdf_b1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    15% {
+        height: 700px;
+        background-image: url("../images/rzdf_b1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    25% {
+        height: 700px;
+        background-image: url("../images/rzdf_b2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    50% {
+        height: 700px;
+        background-image: url("../images/rzdf_b3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    65% {
+        height: 700px;
+        background-image: url("../images/rzdf_b4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    80% {
+        height: 700px;
+        background-image: url("../images/rzdf_b5.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    100% {
+        height: 700px;
+        background-image: url("../images/rzdf_b6.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+}
+
+@keyframes zgss {
+    0% {
+        height: 700px;
+        background-image: url("../images/zgss_b1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    15% {
+        height: 700px;
+        background-image: url("../images/zgss_b1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    25% {
+        height: 700px;
+        background-image: url("../images/zgss_b2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    50% {
+        height: 700px;
+        background-image: url("../images/zgss_b3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    65% {
+        height: 700px;
+        background-image: url("../images/zgss_b4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    80% {
+        height: 700px;
+        background-image: url("../images/zgss_b5.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+    100% {
+        height: 700px;
+        background-image: url("../images/zgss_b6.jpg");
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+}
+
 @keyframes xjcy {
     0% {
         height: 700px;
